@@ -8,22 +8,64 @@
 
 /* Begin PBXBuildFile section */
 		8B11ED4223711F2300F6F595 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B11ED4123711F2300F6F595 /* AppDelegate.swift */; };
-		8B11ED4423711F2300F6F595 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B11ED4323711F2300F6F595 /* ViewController.swift */; };
-		8B11ED4723711F2300F6F595 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B11ED4523711F2300F6F595 /* Main.storyboard */; };
 		8B11ED4A23711F2300F6F595 /* iScanner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8B11ED4823711F2300F6F595 /* iScanner.xcdatamodeld */; };
 		8B11ED4C23711F2600F6F595 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B11ED4B23711F2600F6F595 /* Assets.xcassets */; };
 		8B11ED4F23711F2600F6F595 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B11ED4D23711F2600F6F595 /* LaunchScreen.storyboard */; };
+		8B11ED5D2371228500F6F595 /* IScannerHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B11ED5C2371228500F6F595 /* IScannerHomeController.swift */; };
+		8B11ED602371245300F6F595 /* IScannerSliderSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B11ED5F2371245300F6F595 /* IScannerSliderSelectionView.swift */; };
+		8B11ED64237124DD00F6F595 /* IScannerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B11ED63237124DD00F6F595 /* IScannerExtensions.swift */; };
+		8B11ED67237125CE00F6F595 /* IScannerHomeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B11ED66237125CE00F6F595 /* IScannerHomeHelper.swift */; };
+		8B11ED6A2371267A00F6F595 /* IScannerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B11ED692371267A00F6F595 /* IScannerConstants.swift */; };
+		8B11ED6C2371280D00F6F595 /* IScannerHomeController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B11ED6B2371280D00F6F595 /* IScannerHomeController+UI.swift */; };
+		8B11ED6E2371281C00F6F595 /* IScannerHomeController+Delgates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B11ED6D2371281C00F6F595 /* IScannerHomeController+Delgates.swift */; };
+		8B11ED70237134A800F6F595 /* IScannerBarCodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B11ED6F237134A800F6F595 /* IScannerBarCodeController.swift */; };
+		8B11ED72237134BD00F6F595 /* IScannerMyBarcodesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B11ED71237134BD00F6F595 /* IScannerMyBarcodesController.swift */; };
+		8B11ED742371354F00F6F595 /* IScannerHomeController+Pagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B11ED732371354F00F6F595 /* IScannerHomeController+Pagination.swift */; };
+		8BE2C70F2371582B009C0EDC /* QRScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE2C70E2371582B009C0EDC /* QRScannerView.swift */; };
+		8BE2C713237158E2009C0EDC /* IScannerBarCodeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE2C712237158E2009C0EDC /* IScannerBarCodeHelper.swift */; };
+		8BE2C71923715FCD009C0EDC /* IScannerBarCodeController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE2C71823715FCD009C0EDC /* IScannerBarCodeController+UI.swift */; };
+		8BE2C71B237161BE009C0EDC /* IScannerBarCodeController+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE2C71A237161BE009C0EDC /* IScannerBarCodeController+Actions.swift */; };
+		8BE2C71D237161C8009C0EDC /* IScannerBarCodeController+Delegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE2C71C237161C8009C0EDC /* IScannerBarCodeController+Delegates.swift */; };
+		8BE2C72523718EF3009C0EDC /* IScannerMyBarcodesController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE2C72423718EF3009C0EDC /* IScannerMyBarcodesController+UI.swift */; };
+		8BE2C72723718F01009C0EDC /* IScannerMyBarcodesController+Delegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE2C72623718F01009C0EDC /* IScannerMyBarcodesController+Delegates.swift */; };
+		8BE2C72A23718FEE009C0EDC /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE2C72923718FEE009C0EDC /* CoreDataManager.swift */; };
+		8BE2C72E23719099009C0EDC /* IScannerScannedDatum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE2C72D23719099009C0EDC /* IScannerScannedDatum.swift */; };
+		8BE2C73023719517009C0EDC /* IScannerMyBarcodesController+Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE2C72F23719517009C0EDC /* IScannerMyBarcodesController+Storage.swift */; };
+		8BE2C7352371A823009C0EDC /* iScannerMyBarCodesHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE2C7342371A823009C0EDC /* iScannerMyBarCodesHelper.swift */; };
+		8BE2C7382371AF90009C0EDC /* QRScannerView+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE2C7372371AF90009C0EDC /* QRScannerView+UI.swift */; };
+		8BE2C73A2371AF98009C0EDC /* QRScannerView+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE2C7392371AF98009C0EDC /* QRScannerView+Delegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8B11ED3E23711F2300F6F595 /* iScanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iScanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B11ED4123711F2300F6F595 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8B11ED4323711F2300F6F595 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8B11ED4623711F2300F6F595 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8B11ED4923711F2300F6F595 /* iScanner.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iScanner.xcdatamodel; sourceTree = "<group>"; };
 		8B11ED4B23711F2600F6F595 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B11ED4E23711F2600F6F595 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B11ED5023711F2600F6F595 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B11ED5C2371228500F6F595 /* IScannerHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IScannerHomeController.swift; sourceTree = "<group>"; };
+		8B11ED5F2371245300F6F595 /* IScannerSliderSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IScannerSliderSelectionView.swift; sourceTree = "<group>"; };
+		8B11ED63237124DD00F6F595 /* IScannerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IScannerExtensions.swift; sourceTree = "<group>"; };
+		8B11ED66237125CE00F6F595 /* IScannerHomeHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IScannerHomeHelper.swift; sourceTree = "<group>"; };
+		8B11ED692371267A00F6F595 /* IScannerConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IScannerConstants.swift; sourceTree = "<group>"; };
+		8B11ED6B2371280D00F6F595 /* IScannerHomeController+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IScannerHomeController+UI.swift"; sourceTree = "<group>"; };
+		8B11ED6D2371281C00F6F595 /* IScannerHomeController+Delgates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IScannerHomeController+Delgates.swift"; sourceTree = "<group>"; };
+		8B11ED6F237134A800F6F595 /* IScannerBarCodeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IScannerBarCodeController.swift; sourceTree = "<group>"; };
+		8B11ED71237134BD00F6F595 /* IScannerMyBarcodesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IScannerMyBarcodesController.swift; sourceTree = "<group>"; };
+		8B11ED732371354F00F6F595 /* IScannerHomeController+Pagination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IScannerHomeController+Pagination.swift"; sourceTree = "<group>"; };
+		8BE2C70E2371582B009C0EDC /* QRScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerView.swift; sourceTree = "<group>"; };
+		8BE2C712237158E2009C0EDC /* IScannerBarCodeHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IScannerBarCodeHelper.swift; sourceTree = "<group>"; };
+		8BE2C71823715FCD009C0EDC /* IScannerBarCodeController+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IScannerBarCodeController+UI.swift"; sourceTree = "<group>"; };
+		8BE2C71A237161BE009C0EDC /* IScannerBarCodeController+Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IScannerBarCodeController+Actions.swift"; sourceTree = "<group>"; };
+		8BE2C71C237161C8009C0EDC /* IScannerBarCodeController+Delegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IScannerBarCodeController+Delegates.swift"; sourceTree = "<group>"; };
+		8BE2C72423718EF3009C0EDC /* IScannerMyBarcodesController+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IScannerMyBarcodesController+UI.swift"; sourceTree = "<group>"; };
+		8BE2C72623718F01009C0EDC /* IScannerMyBarcodesController+Delegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IScannerMyBarcodesController+Delegates.swift"; sourceTree = "<group>"; };
+		8BE2C72923718FEE009C0EDC /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		8BE2C72D23719099009C0EDC /* IScannerScannedDatum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IScannerScannedDatum.swift; sourceTree = "<group>"; };
+		8BE2C72F23719517009C0EDC /* IScannerMyBarcodesController+Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IScannerMyBarcodesController+Storage.swift"; sourceTree = "<group>"; };
+		8BE2C7342371A823009C0EDC /* iScannerMyBarCodesHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iScannerMyBarCodesHelper.swift; sourceTree = "<group>"; };
+		8BE2C7372371AF90009C0EDC /* QRScannerView+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "QRScannerView+UI.swift"; sourceTree = "<group>"; };
+		8BE2C7392371AF98009C0EDC /* QRScannerView+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "QRScannerView+Delegate.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +98,196 @@
 		8B11ED4023711F2300F6F595 /* iScanner */ = {
 			isa = PBXGroup;
 			children = (
-				8B11ED4123711F2300F6F595 /* AppDelegate.swift */,
-				8B11ED4323711F2300F6F595 /* ViewController.swift */,
-				8B11ED4523711F2300F6F595 /* Main.storyboard */,
-				8B11ED4B23711F2600F6F595 /* Assets.xcassets */,
+				8B11ED612371249E00F6F595 /* Utilities */,
+				8B11ED5823711F8A00F6F595 /* Modules */,
+				8B11ED5723711F4D00F6F595 /* Applications */,
 				8B11ED4D23711F2600F6F595 /* LaunchScreen.storyboard */,
-				8B11ED5023711F2600F6F595 /* Info.plist */,
-				8B11ED4823711F2300F6F595 /* iScanner.xcdatamodeld */,
 			);
 			path = iScanner;
+			sourceTree = "<group>";
+		};
+		8B11ED5723711F4D00F6F595 /* Applications */ = {
+			isa = PBXGroup;
+			children = (
+				8B11ED5023711F2600F6F595 /* Info.plist */,
+				8B11ED4B23711F2600F6F595 /* Assets.xcassets */,
+				8B11ED4123711F2300F6F595 /* AppDelegate.swift */,
+				8B11ED4823711F2300F6F595 /* iScanner.xcdatamodeld */,
+			);
+			path = Applications;
+			sourceTree = "<group>";
+		};
+		8B11ED5823711F8A00F6F595 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				8BE2C72823718FD5009C0EDC /* iScannerStorage */,
+				8B11ED5A2371225200F6F595 /* iScannerHome */,
+				8BE2C70C237157C2009C0EDC /* iScannerBarCode */,
+				8BE2C72223718E8E009C0EDC /* iScannerMyBarCodes */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		8B11ED5A2371225200F6F595 /* iScannerHome */ = {
+			isa = PBXGroup;
+			children = (
+				8B11ED65237125BB00F6F595 /* Helper */,
+				8B11ED5E2371241F00F6F595 /* Views */,
+				8B11ED5B2371225E00F6F595 /* Controllers */,
+			);
+			path = iScannerHome;
+			sourceTree = "<group>";
+		};
+		8B11ED5B2371225E00F6F595 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8B11ED5C2371228500F6F595 /* IScannerHomeController.swift */,
+				8B11ED6B2371280D00F6F595 /* IScannerHomeController+UI.swift */,
+				8B11ED6D2371281C00F6F595 /* IScannerHomeController+Delgates.swift */,
+				8B11ED732371354F00F6F595 /* IScannerHomeController+Pagination.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8B11ED5E2371241F00F6F595 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8B11ED5F2371245300F6F595 /* IScannerSliderSelectionView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8B11ED612371249E00F6F595 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				8B11ED682371266A00F6F595 /* Constants */,
+				8B11ED62237124B300F6F595 /* Extension */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		8B11ED62237124B300F6F595 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8B11ED63237124DD00F6F595 /* IScannerExtensions.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		8B11ED65237125BB00F6F595 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				8B11ED66237125CE00F6F595 /* IScannerHomeHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		8B11ED682371266A00F6F595 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				8B11ED692371267A00F6F595 /* IScannerConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		8BE2C70C237157C2009C0EDC /* iScannerBarCode */ = {
+			isa = PBXGroup;
+			children = (
+				8BE2C711237158CD009C0EDC /* Helper */,
+				8BE2C710237158BE009C0EDC /* Views */,
+				8BE2C70D237157F4009C0EDC /* Controllers */,
+			);
+			path = iScannerBarCode;
+			sourceTree = "<group>";
+		};
+		8BE2C70D237157F4009C0EDC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8B11ED6F237134A800F6F595 /* IScannerBarCodeController.swift */,
+				8BE2C71823715FCD009C0EDC /* IScannerBarCodeController+UI.swift */,
+				8BE2C71A237161BE009C0EDC /* IScannerBarCodeController+Actions.swift */,
+				8BE2C71C237161C8009C0EDC /* IScannerBarCodeController+Delegates.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8BE2C710237158BE009C0EDC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8BE2C7362371AF6D009C0EDC /* ScannerView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8BE2C711237158CD009C0EDC /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				8BE2C712237158E2009C0EDC /* IScannerBarCodeHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		8BE2C72223718E8E009C0EDC /* iScannerMyBarCodes */ = {
+			isa = PBXGroup;
+			children = (
+				8BE2C7332371A807009C0EDC /* Helper */,
+				8BE2C72323718E9F009C0EDC /* Controllers */,
+			);
+			path = iScannerMyBarCodes;
+			sourceTree = "<group>";
+		};
+		8BE2C72323718E9F009C0EDC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8B11ED71237134BD00F6F595 /* IScannerMyBarcodesController.swift */,
+				8BE2C72423718EF3009C0EDC /* IScannerMyBarcodesController+UI.swift */,
+				8BE2C72F23719517009C0EDC /* IScannerMyBarcodesController+Storage.swift */,
+				8BE2C72623718F01009C0EDC /* IScannerMyBarcodesController+Delegates.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8BE2C72823718FD5009C0EDC /* iScannerStorage */ = {
+			isa = PBXGroup;
+			children = (
+				8BE2C72C2371907B009C0EDC /* Model */,
+				8BE2C72B23719073009C0EDC /* Manager */,
+			);
+			path = iScannerStorage;
+			sourceTree = "<group>";
+		};
+		8BE2C72B23719073009C0EDC /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				8BE2C72923718FEE009C0EDC /* CoreDataManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		8BE2C72C2371907B009C0EDC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8BE2C72D23719099009C0EDC /* IScannerScannedDatum.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8BE2C7332371A807009C0EDC /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				8BE2C7342371A823009C0EDC /* iScannerMyBarCodesHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		8BE2C7362371AF6D009C0EDC /* ScannerView */ = {
+			isa = PBXGroup;
+			children = (
+				8BE2C70E2371582B009C0EDC /* QRScannerView.swift */,
+				8BE2C7372371AF90009C0EDC /* QRScannerView+UI.swift */,
+				8BE2C7392371AF98009C0EDC /* QRScannerView+Delegate.swift */,
+			);
+			path = ScannerView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +350,6 @@
 			files = (
 				8B11ED4F23711F2600F6F595 /* LaunchScreen.storyboard in Resources */,
 				8B11ED4C23711F2600F6F595 /* Assets.xcassets in Resources */,
-				8B11ED4723711F2300F6F595 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +360,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B11ED4423711F2300F6F595 /* ViewController.swift in Sources */,
+				8BE2C71923715FCD009C0EDC /* IScannerBarCodeController+UI.swift in Sources */,
+				8BE2C7352371A823009C0EDC /* iScannerMyBarCodesHelper.swift in Sources */,
+				8B11ED5D2371228500F6F595 /* IScannerHomeController.swift in Sources */,
+				8BE2C713237158E2009C0EDC /* IScannerBarCodeHelper.swift in Sources */,
+				8B11ED602371245300F6F595 /* IScannerSliderSelectionView.swift in Sources */,
+				8B11ED64237124DD00F6F595 /* IScannerExtensions.swift in Sources */,
+				8BE2C71B237161BE009C0EDC /* IScannerBarCodeController+Actions.swift in Sources */,
+				8B11ED72237134BD00F6F595 /* IScannerMyBarcodesController.swift in Sources */,
+				8B11ED6C2371280D00F6F595 /* IScannerHomeController+UI.swift in Sources */,
+				8B11ED6E2371281C00F6F595 /* IScannerHomeController+Delgates.swift in Sources */,
+				8BE2C7382371AF90009C0EDC /* QRScannerView+UI.swift in Sources */,
+				8B11ED70237134A800F6F595 /* IScannerBarCodeController.swift in Sources */,
 				8B11ED4223711F2300F6F595 /* AppDelegate.swift in Sources */,
+				8BE2C73023719517009C0EDC /* IScannerMyBarcodesController+Storage.swift in Sources */,
+				8BE2C70F2371582B009C0EDC /* QRScannerView.swift in Sources */,
 				8B11ED4A23711F2300F6F595 /* iScanner.xcdatamodeld in Sources */,
+				8BE2C73A2371AF98009C0EDC /* QRScannerView+Delegate.swift in Sources */,
+				8BE2C71D237161C8009C0EDC /* IScannerBarCodeController+Delegates.swift in Sources */,
+				8B11ED6A2371267A00F6F595 /* IScannerConstants.swift in Sources */,
+				8BE2C72E23719099009C0EDC /* IScannerScannedDatum.swift in Sources */,
+				8BE2C72523718EF3009C0EDC /* IScannerMyBarcodesController+UI.swift in Sources */,
+				8B11ED67237125CE00F6F595 /* IScannerHomeHelper.swift in Sources */,
+				8BE2C72723718F01009C0EDC /* IScannerMyBarcodesController+Delegates.swift in Sources */,
+				8BE2C72A23718FEE009C0EDC /* CoreDataManager.swift in Sources */,
+				8B11ED742371354F00F6F595 /* IScannerHomeController+Pagination.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8B11ED4523711F2300F6F595 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8B11ED4623711F2300F6F595 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8B11ED4D23711F2600F6F595 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -287,12 +523,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = iScanner/Info.plist;
+				DEVELOPMENT_TEAM = 5VRQ7JD8LN;
+				INFOPLIST_FILE = "$(SRCROOT)/iScanner/Applications/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = redBus.iScanner;
+				PRODUCT_BUNDLE_IDENTIFIER = shafeerp.iScanner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -304,12 +541,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = iScanner/Info.plist;
+				DEVELOPMENT_TEAM = 5VRQ7JD8LN;
+				INFOPLIST_FILE = "$(SRCROOT)/iScanner/Applications/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = redBus.iScanner;
+				PRODUCT_BUNDLE_IDENTIFIER = shafeerp.iScanner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
