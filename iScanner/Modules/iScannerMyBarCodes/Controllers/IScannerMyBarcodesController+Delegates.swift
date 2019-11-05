@@ -13,8 +13,10 @@ extension IScannerMyBarcodesController : UITableViewDelegate, UITableViewDataSou
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
+        let cell = UITableViewCell(style: UITableViewCell.CellStyle.subtitle, reuseIdentifier: nil)
+        
         cell.textLabel?.text = scannedDatum[indexPath.row].text
+        cell.detailTextLabel?.text = scannedDatum[indexPath.row].dateAndTime
         cell.selectionStyle = .none
         return cell
     }

@@ -67,3 +67,11 @@ extension UIColor {
         return UIColor(red: red/255, green: green/255, blue: blue/255, alpha: alpha)
     }
 }
+
+extension Date{
+    func getDateAndTimeInString() -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MMM d, h:mm a"
+        return dateFormatter.string(from: self)
+    }
+}

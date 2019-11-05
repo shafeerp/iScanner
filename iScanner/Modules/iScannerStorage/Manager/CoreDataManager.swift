@@ -17,6 +17,7 @@ class CoreDataManager {
         guard let scannedEntity = NSEntityDescription.entity(forEntityName: IScannerConstants.IScannerStorage.ScannedDataEntity, in: managedContext) else { return }
         let entityInstance = NSManagedObject(entity: scannedEntity, insertInto: managedContext)
         entityInstance.setValue(datum.text, forKey: IScannerConstants.IScannerStorage.TextAttribute)
+        entityInstance.setValue(datum.dateAndTime, forKey: IScannerConstants.IScannerStorage.TimeAttribute)
         
         do {
             try managedContext.save()
@@ -33,7 +34,7 @@ class CoreDataManager {
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: IScannerConstants.IScannerStorage.ScannedDataEntity)
         do {
             guard let result = try managedContext.fetch(fetchRequest) as? [NSManagedObject] else { return scannedDatum }
-            result.forEach{ scannedDatum.append(IScannerScannedDatum(id: $0.objectID, text: $0.value(forKey: IScannerConstants.IScannerStorage.TextAttribute) as? String ?? ""))}
+            result.forEach{ scannedDatum.append(IScannerScannedDatum(id: $0.objectID, text: $0.value(forKey: IScannerConstants.IScannerStorage.TextAttribute) as? String ?? "", dateAndTime: $0.value(forKey: IScannerConstants.IScannerStorage.TimeAttribute) as? String ?? ""))}
             
             
         }catch (let error) {

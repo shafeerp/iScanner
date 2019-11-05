@@ -21,7 +21,7 @@ extension IScannerHomeController : IScannerSliderProtocol {
 extension IScannerHomeController : IScannerBarCodeControllerDelegate {
     func qrScanningSucceededWithCode(_ str: String?) {
         
-        CoreDataManager.addNewData(IScannerScannedDatum(id: nil, text:str ?? ""))
+        CoreDataManager.addNewData(IScannerScannedDatum(id: nil, text:str ?? "", dateAndTime: Date().getDateAndTimeInString()))
         sliderSelection.updateSegment(IScannerTabType.mybarcodes.rawValue)
     }
 }

@@ -20,6 +20,7 @@ struct IScannerConstants {
     struct IScannerStorage {
         static let ScannedDataEntity            = "ScannedItems"
         static let TextAttribute                = "text"
+        static let TimeAttribute                = "dateAndTine"
     }
     struct IScannerMyScans {
         static let EmptyLabelText               = "No scanned items found"

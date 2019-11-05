@@ -10,4 +10,5 @@ import CoreData
 struct IScannerScannedDatum {
     var id : NSManagedObjectID?
     var text : String
+    var dateAndTime : String?
 }
